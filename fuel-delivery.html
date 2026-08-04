@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gas Delivery in Sevierville, TN | Sevierville Towing</title>
+<meta name="description" content="Gas Delivery in Sevierville, TN available 24/7 from Sevierville Towing. Serving Sevierville, Gatlinburg, Sevierville &amp; Sevier County. Call (865) 381-0045.">
+<link rel="canonical" href="https://seviervilletowing.com/fuel-delivery">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --ridge:#14302A;
+    --switchback:#2F4B39;
+    --beacon:#E8762C;
+    --beacon-light:#F2A368;
+    --granite:#211D18;
+    --haze:#F3EEE2;
+    --birch:#FFFDF7;
+    --line:rgba(33,29,24,.13);
+    --line-light:rgba(255,253,247,.18);
+    --font-display:'Big Shoulders Display',sans-serif;
+    --font-body:'Source Sans 3',sans-serif;
+    --font-mono:'JetBrains Mono',monospace;
+    --radius:14px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--granite);
+    background:var(--birch);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:var(--font-display);
+    font-weight:800;
+    letter-spacing:.01em;
+    line-height:1.05;
+    margin:0 0 .5em;
+    text-transform:uppercase;
+  }
+  h1{font-size:clamp(2.1rem,6vw,3.4rem);}
+  h2{font-size:clamp(1.6rem,4.2vw,2.3rem);}
+  h3{font-size:1.05rem;text-transform:none;font-weight:700;}
+  p{margin:0 0 1em;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  img,svg{max-width:100%;display:block;}
+
+  .skip-link{
+    position:absolute;left:-999px;top:auto;
+    background:var(--beacon);color:#fff;padding:10px 16px;border-radius:8px;z-index:200;
+  }
+  .skip-link:focus{left:12px;top:12px;}
+
+  :focus-visible{outline:3px solid var(--beacon);outline-offset:2px;}
+
+  /* ---------- header ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:100;
+    background:var(--birch);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1120px;margin:0 auto;padding:12px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{
+    font-family:var(--font-display);
+    font-weight:800;text-transform:uppercase;font-size:1.05rem;
+    text-decoration:none;color:var(--ridge);white-space:nowrap;
+  }
+  .brand span{display:block;font-size:.62rem;font-family:var(--font-mono);letter-spacing:.08em;color:var(--switchback);text-transform:uppercase;font-weight:600;}
+  .main-nav{
+    display:flex;gap:18px;flex-wrap:wrap;flex:1;justify-content:center;align-items:center;
+  }
+  .main-nav a{
+    text-decoration:none;font-weight:600;font-size:.92rem;white-space:nowrap;color:var(--granite);
+    padding:6px 2px;border-bottom:2px solid transparent;
+  }
+  .main-nav a:hover{border-color:var(--beacon);}
+  .call-button{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--beacon);color:#fff;text-decoration:none;
+    font-weight:700;font-family:var(--font-mono);font-size:.95rem;
+    padding:10px 16px;border-radius:999px;white-space:nowrap;
+  }
+  .beacon-dot{
+    width:8px;height:8px;border-radius:50%;background:#fff;
+    box-shadow:0 0 0 0 rgba(255,255,255,.6);
+    animation:pulse 1.6s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,255,255,.55);}
+    70%{box-shadow:0 0 0 7px rgba(255,255,255,0);}
+    100%{box-shadow:0 0 0 0 rgba(255,255,255,0);}
+  }
+  @media (prefers-reduced-motion:reduce){.beacon-dot{animation:none;}}
+
+  /* ---------- dropdown mega-menu (Services) ---------- */
+  .has-dropdown{position:relative;}
+  .nav-trigger{display:inline-flex;align-items:center;gap:4px;}
+  .caret{font-size:.7em;font-family:var(--font-mono);}
+  .dropdown-panel{
+    display:none;
+    position:absolute;left:50%;top:100%;transform:translateX(-50%);
+    margin-top:0;background:var(--birch);border:1px solid var(--line);
+    border-radius:var(--radius);box-shadow:0 18px 40px rgba(20,48,42,.18);
+    padding:18px;gap:22px;
+    grid-template-columns:repeat(3,180px);
+    z-index:120;
+  }
+  @media (hover:hover) and (pointer:fine){
+    .has-dropdown:hover .dropdown-panel,
+    .has-dropdown:focus-within .dropdown-panel{display:grid;}
+  }
+
+  /* touch-device fallback: JS toggles .open (hover media query never matches on touch) */
+  .has-dropdown.open .dropdown-panel{display:grid;}
+  .nav-trigger{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;}
+  .has-dropdown.open .caret{transform:rotate(180deg);display:inline-block;}
+  .dropdown-col h4{
+    font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.06em;
+    font-size:.7rem;color:var(--switchback);margin:0 0 8px;font-weight:700;
+  }
+  .dropdown-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;}
+  .dropdown-col a{font-size:.86rem;text-decoration:none;border-bottom:none;display:block;}
+  .dropdown-col a:hover{color:var(--beacon);}
+  .dropdown-all{
+    grid-column:1/-1;border-top:1px solid var(--line);padding-top:12px;margin-top:4px;
+    font-family:var(--font-mono);font-size:.78rem;font-weight:700;color:var(--beacon);
+    text-decoration:none;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    min-height:460px;
+    display:flex;align-items:center;justify-content:center;
+    background:
+      linear-gradient(180deg, rgba(15,38,32,.88) 0%, rgba(15,38,32,.55) 45%, rgba(15,38,32,.92) 100%),
+      none center/cover no-repeat;
+    color:var(--birch);
+    padding:64px 0 48px;overflow:hidden;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:0 24px;text-align:center;}
+  .eyebrow{
+    font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;
+    font-size:.78rem;color:var(--beacon-light);margin-bottom:14px;
+  }
+  .hero h1{color:#fff;}
+  .hero-lede{font-size:1.1rem;max-width:620px;margin:0 auto 24px;color:#EAE6DA;}
+  .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:18px;}
+  .cta-primary{
+    background:var(--beacon);color:#fff;text-decoration:none;font-weight:700;
+    font-family:var(--font-mono);padding:14px 26px;border-radius:999px;font-size:1rem;
+  }
+  .cta-secondary{
+    border:1px solid var(--line-light);color:#fff;text-decoration:none;font-weight:600;
+    padding:14px 22px;border-radius:999px;font-size:.95rem;
+  }
+  .hero-note{font-size:.85rem;color:#C9C2AE;margin:0;}
+
+  /* ---------- generic section spacing ---------- */
+  section{padding:56px 0;}
+  .section-lede{max-width:680px;font-size:1.02rem;color:#3a352c;}
+  .detail-form-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-top:8px;}
+  .detail-text{text-align:left;}
+  .detail-form h3{margin:0 0 .3em;}
+  @media (max-width:760px){.detail-form-grid{grid-template-columns:1fr;}}
+  .light{background:var(--haze);}
+  .dark{background:var(--ridge);color:var(--birch);}
+  .dark h2{color:#fff;}
+  .alt-dark{background:var(--switchback);color:var(--birch);}
+  .alt-dark h2{color:#fff;}
+
+  /* ---------- steps ---------- */
+  .steps{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+  .steps li{position:relative;padding-left:46px;}
+  .step-num{
+    position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;
+    background:var(--beacon);color:#fff;font-family:var(--font-mono);font-weight:700;
+    display:flex;align-items:center;justify-content:center;font-size:.95rem;
+  }
+  .steps h3{margin-bottom:.3em;}
+  .steps p{font-size:.95rem;margin:0;color:#3a352c;}
+
+  /* ---------- card grids ---------- */
+  .grid-4{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:28px;}
+  .grid-cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:28px;}
+  .card{
+    background:var(--birch);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;border-left:4px solid var(--beacon);
+  }
+  .light .card, .dark .card{background:var(--birch);color:var(--granite);}
+  .card-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+  .badge{
+    font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:.05em;
+    background:var(--ridge);color:#fff;padding:3px 8px;border-radius:6px;flex-shrink:0;
+  }
+  .card p{font-size:.94rem;margin:0;color:#3a352c;}
+  .card-link{
+    display:inline-block;margin-top:10px;font-family:var(--font-mono);font-size:.82rem;
+    font-weight:700;color:var(--beacon);text-decoration:none;
+  }
+  .card-link:hover{text-decoration:underline;}
+
+  /* ---------- geo section ---------- */
+  .geo p{max-width:700px;color:#E7E2D3;}
+
+  /* ---------- service areas + map ---------- */
+  .areas-grid{display:grid;gap:28px;grid-template-columns:1.1fr 1fr;align-items:start;margin-top:28px;}
+  @media (max-width:760px){.areas-grid{grid-template-columns:1fr;}}
+  .areas-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+  .areas-list li{
+    background:var(--birch);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;
+  }
+  .areas-list strong{display:block;font-family:var(--font-display);text-transform:uppercase;font-size:1rem;margin-bottom:4px;}
+  .areas-list a{text-decoration:underline;}
+  .map-frame-wrap{
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    background:var(--birch);min-height:280px;
+  }
+  .map-frame-wrap iframe{width:100%;height:100%;min-height:280px;border:0;display:block;}
+  .map-caption{font-size:.82rem;color:var(--switchback);margin-top:8px;}
+
+  /* ---------- faq ---------- */
+  .faq-list{margin-top:24px;display:grid;gap:10px;}
+  details{
+    background:var(--haze);border:1px solid var(--line);border-radius:var(--radius);padding:4px 18px;
+  }
+  summary{
+    cursor:pointer;font-weight:700;padding:14px 0;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:'+';font-family:var(--font-mono);font-size:1.2rem;color:var(--beacon);flex-shrink:0;}
+  details[open] summary::after{content:'–';}
+  details p{padding-bottom:14px;margin:0;color:#3a352c;}
+
+  /* ---------- final cta ---------- */
+  .cta-final{background:var(--beacon);color:#241405;text-align:center;}
+  .cta-final h2{color:#241405;}
+  .cta-final .cta-primary{background:var(--ridge);}
+  .cta-final p{max-width:520px;margin:0 auto 24px;font-size:1.05rem;}
+
+  /* ---------- footer ---------- */
+  .site-footer{background:var(--granite);color:#D8D2C2;padding:48px 0 24px;}
+  .footer-grid{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+  .brand-footer{font-family:var(--font-display);text-transform:uppercase;color:#fff;font-size:1.1rem;margin-bottom:6px;}
+  .site-footer a{text-decoration:underline;}
+  .site-footer nav{display:flex;flex-direction:column;gap:8px;}
+  .fine-print{
+    max-width:1120px;margin:32px auto 0;padding:16px 24px 0;border-top:1px solid rgba(255,255,255,.12);
+    font-size:.8rem;color:#9C9686;
+  }
+
+  /* ---------- mobile call bar ---------- */
+  .mobile-call-bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:150;
+    background:var(--beacon);color:#fff;text-decoration:none;text-align:center;
+    font-family:var(--font-mono);font-weight:700;padding:14px;font-size:1rem;
+    display:none;
+  }
+  @media (max-width:680px){
+    .mobile-call-bar{display:block;}
+    body{padding-bottom:54px;}
+  }
+  @media (min-width:681px){
+    .header-inner .call-button{display:inline-flex;}
+  }
+  @media (max-width:680px){
+    .header-inner .call-button{display:none;}
+  }
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Sevierville<span>Towing &amp; Recovery</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <div class="has-dropdown">
+        <a class="nav-trigger" href="service-areas/index.html">Services <span class="caret">&#9662;</span></a>
+        <div class="dropdown-panel">
+          <div class="dropdown-col"><h4>Emergency</h4><ul><li><a href="emergency-24-hour-towing.html">Emergency Towing</a></li></ul></div>
+          <div class="dropdown-col"><h4>Recovery &amp; Heavy-Duty</h4><ul><li><a href="accident-towing.html">Accident Towing</a></li><li><a href="mountain-recovery.html">Mountain Towing</a></li><li><a href="camper-recovery.html">Camper &amp; RV Towing</a></li><li><a href="long-distance-towing.html">Long-Distance Towing</a></li><li><a href="private-property-towing.html">Private Property Towing</a></li></ul></div>
+          <div class="dropdown-col"><h4>Roadside Assistance</h4><ul><li><a href="lockout-service.html">Vehicle Lockout</a></li><li><a href="jump-start-service.html">Jump Start</a></li><li><a href="fuel-delivery.html">Gas Delivery</a></li><li><a href="flat-tire-change.html">Flat Tire Change</a></li></ul></div>
+        </div>
+      </div>
+      <div class="has-dropdown">
+        <a class="nav-trigger" href="service-areas/index.html">Service Areas <span class="caret">&#9662;</span></a>
+        <div class="dropdown-panel">
+          <div class="dropdown-col">
+            <ul>
+              <li><a href="service-areas/pigeon-forge.html">Pigeon Forge</a></li>
+              <li><a href="service-areas/gatlinburg.html">Gatlinburg</a></li>
+              <li><a href="service-areas/kodak.html">Kodak</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="faq.html">FAQ</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
+    <a class="call-button" href="tel:+18653810045" aria-label="Call Sevierville Towing">
+      <span class="beacon-dot" aria-hidden="true"></span>(865) 381-0045
+    </a>
+  </div>
+</header>
+<div class="mobile-call-bar"><a href="tel:+18653810045">Tap to Call (865) 381-0045</a></div>
+<main id="main">
+  <section class="hero" id="top" style="background:linear-gradient(180deg, rgba(15,38,32,.88) 0%, rgba(15,38,32,.55) 45%, rgba(15,38,32,.92) 100%), url(assets/fuel-delivery.jpg); background-size:cover; background-position:center;">
+    <div class="hero-inner">
+      <p class="eyebrow">Gas Delivery &bull; Sevierville, TN</p>
+      <h1>Gas Delivery in Sevierville, TN</h1>
+      <p class="hero-lede">Passed the last Sevierville station heading toward the hills? We bring gas or diesel to wherever you stopped.</p>
+      <div class="hero-actions">
+        <a class="cta-primary" href="tel:+18653810045">Call (865) 381-0045</a>
+        <a class="cta-secondary" href="#services">Other Services &darr;</a>
+      </div>
+    </div>
+  </section>
+  <section class="light"><div class="wrap">
+    <p class="section-lede">Sevierville has gas stations, but tourists heading straight from I-40 toward the park sometimes skip them — and by the time they're in the hills and the tank is low, the nearest pump is back down the mountain. Sevierville Towing brings fuel to wherever you've run out, on the highway or a rural county road, with enough to reach a station. Call (865) 381-0045 and tell us your location and whether you need gas or diesel.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>What to Do While You Wait</h2>
+    <p class="section-lede">Once you've called, a few things keep you safer until the truck arrives. If you can do so safely, move your vehicle out of the travel lane and onto a shoulder. Turn on your hazard lights so approaching drivers see you early. On a busy road it's usually safer to step away from the vehicle and wait behind a barrier. Keep your phone handy &mdash; your driver may call to pin down exactly where you are.</p>
+  </div></section>
+
+  <section class="light" id="areas"><div class="wrap">
+    <h2>Serving the Whole Smokies Corridor</h2>
+    <p class="section-lede">We bring this service to every town we cover. Choose your location for details specific to your roads:</p>
+    <div class="grid-cards"><a class="card" style="text-decoration:none;display:block;" href="service-areas/gatlinburg.html"><h3 style="margin:0;">Towing in Gatlinburg &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="service-areas/sevierville.html"><h3 style="margin:0;">Towing in Sevierville &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="service-areas/wears-valley.html"><h3 style="margin:0;">Towing in Wears Valley &rarr;</h3></a></div>
+  </div></section>
+
+  <section id="services"><div class="wrap">
+    <h2>Other Services We Offer</h2>
+    <p class="section-lede">Whatever the situation, a local Sevierville crew is ready:</p>
+    <div class="grid-cards"><a class="card" style="text-decoration:none;display:block;" href="emergency-24-hour-towing.html"><h3 style="margin:0;">Emergency Towing &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="accident-towing.html"><h3 style="margin:0;">Accident Towing &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="mountain-recovery.html"><h3 style="margin:0;">Mountain Towing &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="camper-recovery.html"><h3 style="margin:0;">Camper &amp; RV Towing &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="long-distance-towing.html"><h3 style="margin:0;">Long-Distance Towing &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="private-property-towing.html"><h3 style="margin:0;">Private Property Towing &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="lockout-service.html"><h3 style="margin:0;">Vehicle Lockout &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="jump-start-service.html"><h3 style="margin:0;">Jump Start &rarr;</h3></a><a class="card" style="text-decoration:none;display:block;" href="flat-tire-change.html"><h3 style="margin:0;">Flat Tire Change &rarr;</h3></a></div>
+  </div></section>
+
+  <section class="cta-final dark">
+    <div class="wrap">
+      <h2>Need a Tow in Sevierville Right Now?</h2>
+      <p class="section-lede" style="color:#EAE6DA;">One call and a local driver is on the way.</p>
+      <a class="cta-primary" href="tel:+18653810045">Call (865) 381-0045</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="brand-footer">Sevierville Towing</p>
+      <p class="footer-address">201 Gary Wade Blvd, Sevierville, TN 37862</p>
+      <p>Open 24 hours, 365 days a year.</p>
+      <p>Licensed &amp; insured.</p>
+    </div>
+    <div>
+      <p><a href="tel:+18653810045">(865) 381-0045</a></p>
+      <p><a href="mailto:info@seviervilletowing.com">info@seviervilletowing.com</a></p>
+    </div>
+    <div>
+      <nav aria-label="Footer">
+        <a href="service-areas/index.html">Service Areas</a>
+        <a href="service-areas/gatlinburg.html">Gatlinburg</a>
+        <a href="service-areas/sevierville.html">Sevierville</a>
+        <a href="service-areas/wears-valley.html">Wears Valley</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </div>
+  <p class="fine-print">&copy; 2026 Sevierville Towing. Licensed &amp; insured. 24/7 towing, roadside assistance &amp; recovery across Sevierville, Gatlinburg, Sevierville, Wears Valley &amp; Sevier County, TN.</p>
+</footer>
+</body>
+</html>
