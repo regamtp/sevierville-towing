@@ -1,0 +1,25 @@
+# Legacy .html URLs -> clean URLs (301 instead of the default 307 from html_handling)
+/about-us.html /about-us 301
+/accident-towing.html /accident-towing 301
+/camper-recovery.html /camper-recovery 301
+/contact-us.html /contact-us 301
+/emergency-24-hour-towing.html /emergency-24-hour-towing 301
+/faq.html /faq 301
+/flat-tire-change.html /flat-tire-change 301
+/fuel-delivery.html /fuel-delivery 301
+/index.html / 301
+/jump-start-service.html /jump-start-service 301
+/lockout-service.html /lockout-service 301
+/long-distance-towing.html /long-distance-towing 301
+/mountain-recovery.html /mountain-recovery 301
+/privacy-policy.html /privacy-policy 301
+/private-property-towing.html /private-property-towing 301
+/service-areas/gatlinburg.html /service-areas/gatlinburg 301
+/service-areas/index.html /service-areas/ 301
+/service-areas/kodak.html /service-areas/kodak 301
+/service-areas/pigeon-forge.html /service-areas/pigeon-forge 301
+/service-areas/sevierville.html /service-areas/sevierville 301
+/service-areas/wears-valley.html /service-areas/wears-valley 301
+
+# Folder URLs without trailing slash -> canonical trailing-slash URL (301 instead of 307)
+/service-areas /service-areas/ 301

@@ -1,0 +1,17 @@
+# Keep repo/build metadata out of the public static-assets bundle
+# (assets.directory is "." so everything in the repo root is otherwise served)
+.git
+.git/
+.gitignore
+**/.gitignore
+.assetsignore
+wrangler.json
+wrangler.jsonc
+wrangler.toml
+.wrangler
+node_modules
+package.json
+package-lock.json
+*.md
+*.csv
+.DS_Store
