@@ -15,3 +15,5 @@ package-lock.json
 *.md
 *.csv
 .DS_Store
+_headers
+_redirects
