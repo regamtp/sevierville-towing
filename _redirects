@@ -23,3 +23,45 @@
 
 # Folder URLs without trailing slash -> canonical trailing-slash URL (301 instead of 307)
 /service-areas /service-areas/ 301
+
+# Page URLs with an added trailing slash -> canonical slashless URL (301, not 307)
+/about-us/ /about-us 301
+/accident-towing/ /accident-towing 301
+/camper-recovery/ /camper-recovery 301
+/contact-us/ /contact-us 301
+/emergency-24-hour-towing/ /emergency-24-hour-towing 301
+/faq/ /faq 301
+/flat-tire-change/ /flat-tire-change 301
+/fuel-delivery/ /fuel-delivery 301
+/jump-start-service/ /jump-start-service 301
+/lockout-service/ /lockout-service 301
+/long-distance-towing/ /long-distance-towing 301
+/mountain-recovery/ /mountain-recovery 301
+/privacy-policy/ /privacy-policy 301
+/private-property-towing/ /private-property-towing 301
+/service-areas/gatlinburg/ /service-areas/gatlinburg 301
+/service-areas/kodak/ /service-areas/kodak 301
+/service-areas/pigeon-forge/ /service-areas/pigeon-forge 301
+/service-areas/sevierville/ /service-areas/sevierville 301
+/service-areas/wears-valley/ /service-areas/wears-valley 301
+
+# Former JPEGs, including the missing Pigeon Forge town photo
+/assets/about-us.jpg /assets/index.webp 301
+/assets/accident-towing.jpg /assets/accident-towing.webp 301
+/assets/camper-recovery.jpg /assets/camper-recovery.webp 301
+/assets/contact-us.jpg /assets/index.webp 301
+/assets/emergency-24-hour-towing.jpg /assets/emergency-24-hour-towing.webp 301
+/assets/faq.jpg /assets/index.webp 301
+/assets/flat-tire-change.jpg /assets/flat-tire-change.webp 301
+/assets/fuel-delivery.jpg /assets/fuel-delivery.webp 301
+/assets/index.jpg /assets/index.webp 301
+/assets/jump-start-service.jpg /assets/jump-start-service.webp 301
+/assets/lockout-service.jpg /assets/lockout-service.webp 301
+/assets/long-distance-towing.jpg /assets/long-distance-towing.webp 301
+/assets/mountain-recovery.jpg /assets/mountain-recovery.webp 301
+/assets/privacy-policy.jpg /assets/index.webp 301
+/assets/private-property-towing.jpg /assets/private-property-towing.webp 301
+/assets/town-gatlinburg.jpg /assets/town-gatlinburg.webp 301
+/assets/town-pigeon-forge.jpg /assets/town-pigeon-forge.webp 301
+/assets/town-sevierville.jpg /assets/town-sevierville.webp 301
+/assets/town-wears-valley.jpg /assets/town-wears-valley.webp 301
