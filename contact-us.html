@@ -500,13 +500,15 @@
 <p class="section-lede">On a shoulder or a ramp, stay out of the lane while you talk. In a lot, stay with the vehicle so the driver can match the description to the car. Town-specific notes are on the <a href="/service-areas/" style="color:var(--beacon-deep);font-weight:600;">service areas</a> page.</p>
 <h3>Send a message</h3>
 <p class="section-lede">The form below is for non-emergency questions, quotes, and follow-ups. It does not page a driver. Anything that needs a truck now still goes to (865) 381-0045.</p>
-<form action="https://formspree.io/f/xjgnpjqk" method="POST" style="display:grid;gap:14px;margin-top:18px;max-width:560px;">
+<form action="https://formspree.io/f/meaaejwl" method="POST" style="display:grid;gap:14px;margin-top:18px;max-width:560px;">
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
   <input type="hidden" name="_subject" value="New contact form submission &mdash; Sevierville Towing">
+  <input type="hidden" name="site" value="Sevierville">
   <label style="display:grid;gap:6px;font-weight:600;">Name<input type="text" name="name" required style="padding:12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;"></label>
   <label style="display:grid;gap:6px;font-weight:600;">Phone<input type="tel" name="phone" required style="padding:12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;"></label>
   <label style="display:grid;gap:6px;font-weight:600;">How can we help?<textarea name="message" rows="4" style="padding:12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;"></textarea></label>
   <button type="submit" class="cta-primary" style="border:none;cursor:pointer;">Send Message</button>
+  <p class="form-status" role="status" aria-live="polite" style="margin:0;font-size:.95rem;"></p>
 </form></div></section>
 
   <section class="cta-final dark">
@@ -546,5 +548,44 @@
   </div>
   <p class="fine-print">&copy; 2026 Sevierville Towing. Licensed &amp; insured. 24/7 towing, roadside assistance &amp; recovery across Sevierville, Pigeon Forge, Gatlinburg, Kodak, Wears Valley &amp; Sevier County, TN.</p>
 </footer>
+<script>
+(function(){
+  var forms = document.querySelectorAll('form[action*="formspree.io"]');
+  for (var i = 0; i < forms.length; i++) {
+    (function(form){
+      var status = form.querySelector('.form-status');
+      form.addEventListener('submit', function(event){
+        if (!window.fetch) return;
+        event.preventDefault();
+        var button = form.querySelector('[type="submit"]');
+        if (button) button.disabled = true;
+        if (status) status.textContent = 'Sending…';
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response){
+          if (response.ok) {
+            form.reset();
+            if (status) status.textContent = 'Thanks, your message was sent. If you need a truck now, call (865) 381-0045.';
+            return;
+          }
+          return response.json().then(function(body){
+            var message = 'Something went wrong sending your message. Please call (865) 381-0045.';
+            if (body && body.errors && body.errors.length) {
+              message = body.errors.map(function(error){ return error.message; }).join(' ');
+            }
+            if (status) status.textContent = message;
+          });
+        }).catch(function(){
+          if (status) status.textContent = 'Something went wrong sending your message. Please call (865) 381-0045.';
+        }).then(function(){
+          if (button) button.disabled = false;
+        });
+      });
+    })(forms[i]);
+  }
+})();
+</script>
 </body>
 </html>
