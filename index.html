@@ -32,7 +32,7 @@
   "@type": "TowingService",
   "name": "Sevierville Towing",
   "url": "https://seviervilletowing.com/",
-  "telephone": "+18653810045",
+  "telephone": "+18652779406",
   "image": "https://seviervilletowing.com/assets/og-image.jpg",
   "logo": "https://seviervilletowing.com/assets/favicon-512.png",
   "address": {
@@ -467,12 +467,12 @@
       <a href="/about-us">About Us</a>
       <a href="/contact-us">Contact Us</a>
     </nav>
-    <a class="call-button" href="tel:+18653810045" aria-label="Call Sevierville Towing">
-      <span class="beacon-dot" aria-hidden="true"></span>(865) 381-0045
+    <a class="call-button" href="tel:+18652779406" aria-label="Call Sevierville Towing">
+      <span class="beacon-dot" aria-hidden="true"></span>(865) 277-9406
     </a>
   </div>
 </header>
-<div class="mobile-call-bar"><a href="tel:+18653810045">Tap to Call (865) 381-0045</a></div>
+<div class="mobile-call-bar"><a href="tel:+18652779406">Tap to Call (865) 277-9406</a></div>
 <main id="main">
   <section class="hero" id="top">
     <img class="hero-media" src="/assets/index.webp" alt="" width="1280" height="703" fetchpriority="high" decoding="async">
@@ -481,7 +481,7 @@
       <h1>Sevierville Towing Services</h1>
       <p class="hero-lede">Stalled on SR-66 coming off I-40? Broke down on US-441 heading into the mountains? A local Sevierville crew is on standby around the clock to reach you fast.</p>
       <div class="hero-actions">
-        <a class="cta-primary" href="tel:+18653810045">Call (865) 381-0045</a>
+        <a class="cta-primary" href="tel:+18652779406">Call (865) 277-9406</a>
         <a class="cta-secondary" href="#services">See All Services &darr;</a>
       </div>
     </div>
@@ -569,7 +569,7 @@
     <div class="wrap">
       <h2>Call for a Tow in Sevierville</h2>
       <p class="section-lede">One call and a local driver is on the way.</p>
-      <a class="cta-primary" href="tel:+18653810045">Call (865) 381-0045</a>
+      <a class="cta-primary" href="tel:+18652779406">Call (865) 277-9406</a>
     </div>
   </section>
 </main>
@@ -582,7 +582,7 @@
       <p>Licensed &amp; insured.</p>
     </div>
     <div>
-      <p><a href="tel:+18653810045">(865) 381-0045</a></p>
+      <p><a href="tel:+18652779406">(865) 277-9406</a></p>
       <p><a href="mailto:info@seviervilletowing.com">info@seviervilletowing.com</a></p>
       <p><a href="/contact-us">Contact</a></p>
       <p><a href="/about-us">About</a></p>
@@ -621,18 +621,18 @@
         }).then(function(response){
           if (response.ok) {
             form.reset();
-            if (status) status.textContent = 'Thanks, your message was sent. If you need a truck now, call (865) 381-0045.';
+            if (status) status.textContent = 'Thanks, your message was sent. If you need a truck now, call (865) 277-9406.';
             return;
           }
           return response.json().then(function(body){
-            var message = 'Something went wrong sending your message. Please call (865) 381-0045.';
+            var message = 'Something went wrong sending your message. Please call (865) 277-9406.';
             if (body && body.errors && body.errors.length) {
               message = body.errors.map(function(error){ return error.message; }).join(' ');
             }
             if (status) status.textContent = message;
           });
         }).catch(function(){
-          if (status) status.textContent = 'Something went wrong sending your message. Please call (865) 381-0045.';
+          if (status) status.textContent = 'Something went wrong sending your message. Please call (865) 277-9406.';
         }).then(function(){
           if (button) button.disabled = false;
         });
