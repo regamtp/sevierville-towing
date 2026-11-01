@@ -54,10 +54,14 @@
   Cache-Control: public, max-age=0, must-revalidate
 /service-areas/gatlinburg
   Cache-Control: public, max-age=0, must-revalidate
+  X-Robots-Tag: noindex, follow
+  Link: <https://gatlinburgtowingco.com/>; rel="canonical"
 /service-areas/kodak
   Cache-Control: public, max-age=0, must-revalidate
 /service-areas/pigeon-forge
   Cache-Control: public, max-age=0, must-revalidate
+  X-Robots-Tag: noindex, follow
+  Link: <https://pigeonforgetowing.com/>; rel="canonical"
 /service-areas/sevierville
   Cache-Control: public, max-age=0, must-revalidate
 /service-areas/wears-valley
