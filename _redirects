@@ -20,6 +20,10 @@
 /service-areas/pigeon-forge.html /service-areas/pigeon-forge 301
 /service-areas/sevierville.html /service-areas/sevierville 301
 /service-areas/wears-valley.html /service-areas/wears-valley 301
+/service-areas/downtown-sevierville.html /service-areas/downtown-sevierville 301
+/service-areas/highway-66.html /service-areas/highway-66 301
+/service-areas/seymour.html /service-areas/seymour 301
+/service-areas/dandridge.html /service-areas/dandridge 301
 
 # Folder URLs without trailing slash -> canonical trailing-slash URL (301 instead of 307)
 /service-areas /service-areas/ 301
@@ -44,6 +48,10 @@
 /service-areas/pigeon-forge/ /service-areas/pigeon-forge 301
 /service-areas/sevierville/ /service-areas/sevierville 301
 /service-areas/wears-valley/ /service-areas/wears-valley 301
+/service-areas/downtown-sevierville/ /service-areas/downtown-sevierville 301
+/service-areas/highway-66/ /service-areas/highway-66 301
+/service-areas/seymour/ /service-areas/seymour 301
+/service-areas/dandridge/ /service-areas/dandridge 301
 
 # Former JPEGs, including the missing Pigeon Forge town photo
 /assets/about-us.jpg /assets/index.webp 301
