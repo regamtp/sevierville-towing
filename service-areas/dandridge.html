@@ -34,7 +34,7 @@
   "url": "https://seviervilletowing.com/",
   "telephone": "+18652779406",
   "image": "https://seviervilletowing.com/assets/og-image.jpg",
-  "logo": "https://seviervilletowing.com/assets/favicon-512.png",
+  "logo": "https://seviervilletowing.com/assets/brand/sevierville-badge-512.webp",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Sevierville",
@@ -228,11 +228,34 @@
   .header-inner{
     max-width:1120px;margin:0 auto;padding:12px 24px;
     display:flex;align-items:center;justify-content:space-between;gap:16px;
+    position:relative;
   }
   .brand{
+    position:relative;
+    flex:0 0 136px;
+    align-self:stretch;
+    line-height:0;
     font-family:var(--font-display);
     font-weight:800;text-transform:uppercase;font-size:1.05rem;
     text-decoration:none;color:var(--ridge);white-space:nowrap;
+  }
+  .brand-logo{
+    position:absolute;
+    z-index:110;
+    left:0;
+    top:-6px;
+    width:136px;
+    height:136px;
+    box-sizing:border-box;
+    display:block;
+    border-radius:50%;
+    border:4px solid var(--birch);
+    box-shadow:0 10px 22px rgba(0,0,0,.32);
+    background:transparent;
+  }
+  @media (max-width:680px){
+    .brand{flex-basis:96px;}
+    .brand-logo{width:96px;height:96px;top:auto;bottom:-48px;}
   }
   .brand span{display:block;font-size:.62rem;font-family:var(--font-mono);letter-spacing:.08em;color:var(--switchback);text-transform:uppercase;font-weight:600;}
   .main-nav{
@@ -455,7 +478,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="/">Sevierville<span>Towing</span></a>
+    <a class="brand" href="/"><img class="brand-logo" src="/assets/brand/sevierville-badge-160.webp" srcset="/assets/brand/sevierville-badge-160.webp 160w, /assets/brand/sevierville-badge-320.webp 320w" sizes="(max-width: 680px) 96px, 136px" alt="Sevierville Towing" width="136" height="136"></a>
     <nav class="main-nav" aria-label="Primary">
       <div class="has-dropdown">
         <a class="nav-trigger" href="/service-areas/">Services <span class="caret">&#9662;</span></a>
