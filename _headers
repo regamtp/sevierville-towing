@@ -70,3 +70,33 @@
   Cache-Control: public, max-age=0, must-revalidate
 /service-areas/dandridge
   Cache-Control: public, max-age=0, must-revalidate
+/service-areas/boyds-creek
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/middle-creek
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/dolly-parton-parkway
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/veterans-boulevard
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/gists-creek
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/sevierville-airport
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/harrisburg
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/old-newport-highway
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/cherokee-hills
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/fairgarden
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/jones-cove
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/richardson-cove
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/catons-chapel
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/douglas-dam
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/alder-branch
+  Cache-Control: public, max-age=0, must-revalidate
